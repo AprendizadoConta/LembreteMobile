@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLembrete.Android", "AppLembrete\AppLembrete.Android\AppLembrete.Android.csproj", "{9ADF3716-FD0B-4AD7-A7B5-0A863AB66634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLembrete", "AppLembrete\AppLembrete\AppLembrete.csproj", "{959F510B-5125-459F-9C90-120460B54A86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ADF3716-FD0B-4AD7-A7B5-0A863AB66634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ADF3716-FD0B-4AD7-A7B5-0A863AB66634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ADF3716-FD0B-4AD7-A7B5-0A863AB66634}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9ADF3716-FD0B-4AD7-A7B5-0A863AB66634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ADF3716-FD0B-4AD7-A7B5-0A863AB66634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ADF3716-FD0B-4AD7-A7B5-0A863AB66634}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{959F510B-5125-459F-9C90-120460B54A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{959F510B-5125-459F-9C90-120460B54A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{959F510B-5125-459F-9C90-120460B54A86}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{959F510B-5125-459F-9C90-120460B54A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{959F510B-5125-459F-9C90-120460B54A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{959F510B-5125-459F-9C90-120460B54A86}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23939080-50FB-4DD0-8BE0-AB33505059FF}
+	EndGlobalSection
+EndGlobal
