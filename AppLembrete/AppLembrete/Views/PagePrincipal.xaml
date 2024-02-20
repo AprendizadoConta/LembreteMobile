@@ -1,12 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppLembrete.Views.PagePrincipal">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+             x:Class="AppLembrete.Views.PagePrincipal" IsPresented="True"> <!--AQUI É O NOSSO MENU-->
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout Margin="10">
+                <Image Source="esqueci2.png" HorizontalOptions="Center"/>
+                <Label Text="Esqueci" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,50"/>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info2.png"/>
+                    <Button x:Name="btHome" Text="HOME" HorizontalOptions="FillAndExpand" Clicked="btHome_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="inserir.png"/>
+                    <Button x:Name="btCadastrar" Text="CADASTRAR" HorizontalOptions="FillAndExpand" Clicked="btCadastrar_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="localizar.png"/>
+                    <Button x:Name="btLocalizar" Text="LOCALIZAR" HorizontalOptions="FillAndExpand" Clicked="btLocalizar_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info.png"/>
+                    <Button x:Name="btSobre" Text="SOBRE" HorizontalOptions="FillAndExpand" Clicked="btSobre_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage Title="Page Principal">
+            <Label x:Name="testeDb" Text="Olá..."/>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

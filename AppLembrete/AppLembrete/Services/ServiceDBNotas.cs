@@ -106,7 +106,7 @@ namespace AppLembrete.Services
             }
             return lista;
         }
-        public List<ModelNotas> Localizar(string titulo, Boolean favorito)
+        public List<ModelNotas> Localizar(string titulo, Boolean favorito) //esse localizar só mostra os favoritados
         {
             List<ModelNotas> lista = new List<ModelNotas>();
             try
