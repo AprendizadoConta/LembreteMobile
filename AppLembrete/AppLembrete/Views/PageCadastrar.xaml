@@ -4,9 +4,18 @@
              x:Class="AppLembrete.Views.PageCadastrar">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="txtCodigo" IsVisible="False" IsEnabled="False"/>
+            <Entry x:Name="txtTitulo" Keyboard="Default" Placeholder="Título da nota"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nota favorita:" FontSize="Medium"/>
+                <Switch x:Name="swFavorito" HorizontalOptions="Start"/>
+            </StackLayout>
+            <Editor x:Name="txtDados" Keyboard="Default" Placeholder="Dados da nota" VerticalOptions="FillAndExpand" Margin="20"/>
+            <StackLayout Orientation="Horizontal" Margin="20,0,20,0">
+                <Button x:Name="btSalvar" Text="Inserir" HorizontalOptions="FillAndExpand" Clicked="btSalvar_Clicked"/>
+                <Button x:Name="btExcluir" Text="Excluir" HorizontalOptions="FillAndExpand" IsVisible="False" Clicked="btExcluir_Clicked"/>
+                <Button x:Name="btCancelar" Text="Cancelar" HorizontalOptions="FillAndExpand" Clicked="btCancelar_Clicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
